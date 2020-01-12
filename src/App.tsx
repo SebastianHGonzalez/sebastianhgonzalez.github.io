@@ -1,7 +1,13 @@
 import React from 'react';
 
+import GlobalStyle from './components/GlobalStyle';
+import MainPage from './components/pages/MainPage';
+
 const App: React.FC = () => (
-  <div className="App" />
+  <>
+    <GlobalStyle />
+    <MainPage />
+  </>
 );
 
 export default App;
