@@ -1,11 +1,14 @@
 module.exports = {
     extends: [
         'airbnb',
+        'plugin:import/errors',
+        'plugin:import/warnings',
         'plugin:@typescript-eslint/recommended',
         'plugin:jest/recommended'
     ],
     parser: '@typescript-eslint/parser',
     plugins: [
+      'import',
       '@typescript-eslint',
       'prettier',
       'better-styled-components',
@@ -17,6 +20,9 @@ module.exports = {
       },
       'import/resolver': {
         typescript: {},
+        node: {
+          paths: ["src"]
+        }
       },
     },
     env: {

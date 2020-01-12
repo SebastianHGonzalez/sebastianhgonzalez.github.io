@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+html, body, #root {
+  height: 100%;
+}
+
 /**
  * wipe.css
  * https://raw.githubusercontent.com/danilowoz/wipe.css/master/wipe.css
